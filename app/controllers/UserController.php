@@ -7,6 +7,7 @@ class UserController extends Controller {
         $this->userModel = new User();
     }
 
+    //
     public function index() {
         if (!isset($_SESSION['user_id'])) {
             header('Location: /login');
