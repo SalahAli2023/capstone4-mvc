@@ -11,3 +11,6 @@ CREATE TABLE users (
 
 INSERT INTO users (name, email, password) VALUES 
 ('Admin User', 'salah@g.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi'); -- password is "password"
+
+INSERT INTO users (name, email, password) VALUES
+('salah', 'salah@gmail.com', '$2y$10$/G7T2rzdQ7jlfgegv8XjXu/nIVnlZaoBqMaUa4N0Fvzzak30O7ZmC'); -- password is "12"
