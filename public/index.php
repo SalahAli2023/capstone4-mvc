@@ -1,16 +1,17 @@
 <?php
 session_start();
 
-require_once '../app/core/Router.php';
-require_once '../app/core/Controller.php';
-require_once '../config/database.php';
-require_once '../app/models/User.php';
-require_once '../app/controllers/AuthController.php';
-require_once '../app/controllers/UserController.php';
+require_once __DIR__ . '/../app/core/Router.php';
+require_once __DIR__ . '/../app/core/Controller.php';
+require_once __DIR__ . '/../config/database.php';
+require_once __DIR__ . '/../app/models/User.php';
+require_once __DIR__ . '/../app/controllers/AuthController.php';
+require_once __DIR__ . '/../app/controllers/UserController.php';
 
 $router = new Router();
 
 // Add routes
+$router->addRoute('/', 'AuthController', 'login');
 $router->addRoute('/login', 'AuthController', 'login');
 $router->addRoute('/logout', 'AuthController', 'logout');
 $router->addRoute('/users', 'UserController', 'index');
