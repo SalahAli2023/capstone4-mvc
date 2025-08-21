@@ -61,36 +61,6 @@ Ensure Apache allows \`.htaccess\` overrides:
 </Directory>
 \`\`\`
 
-##  Project Structure
-
-\`\`\`
-capstone4-mvc/
-├── app/
-│   ├── controllers/     # Application Controllers
-│   │   ├── AuthController.php
-│   │   └── UserController.php
-│   ├── models/         # Data Models
-│   │   └── User.php
-│   ├── views/          # View Templates
-│   │   ├── auth/
-│   │   │   └── login.php
-│   │   └── users/
-│   │       └── index.php
-│   └── core/           # Core Framework
-│       ├── Router.php
-│       └── Controller.php
-├── public/
-│   ├── assets/
-│   │   └── css/
-│   │       └── style.css
-│   ├── index.php       # Application Entry Point
-│   └── .htaccess       # URL Rewriting
-├── config/
-│   └── database.php    # Database Configuration
-├── vendor/             # Third-party Libraries
-└── database.sql        # Database Schema
-\`\`\`
-
 ##  Usage
 
 ### Access the Application
